@@ -26,7 +26,6 @@ namespace API.Data
                 .Where(x => x.UserName == username)
                 .ProjectTo<MemberDTO>(_mapper.ConfigurationProvider)
                 .SingleOrDefaultAsync();
-
         }
 
         public async Task<IEnumerable<MemberDTO>> GetMembersAsync()
