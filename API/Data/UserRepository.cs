@@ -29,7 +29,6 @@ namespace API.Data
                 .ProjectTo<MemberDTO>(_mapper.ConfigurationProvider)
                 .SingleOrDefaultAsync();
         }
-
         public async Task<PagedList<MemberDTO>> GetMembersAsync(UserParams  userParams)
         {
             var query = _context.Users.AsQueryable();
