@@ -20,7 +20,7 @@ export class MemberDetailComponent implements OnInit {
   activeTab: TabDirective;
   messages: Message[] = [];
 
-  constructor(private memberService: MembersService, private route: ActivatedRoute,
+  constructor(private route: ActivatedRoute,
               private messageService: MessageService) { }
 
   ngOnInit(): void {
@@ -74,4 +74,5 @@ export class MemberDetailComponent implements OnInit {
       this.loadMessages();
     }
   }
+
 }
